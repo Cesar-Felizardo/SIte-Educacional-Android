@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+html {
+    scroll-behavior: smooth;
+}
 :root {                 /* CRIAR VARIAVEIS EM CSS */
     --cor0: #035412;
     --cor1: #49d162;
@@ -12,9 +15,15 @@
 }
 
 @font-face {
-    font-family: 'android';
-    src: url(fontes/idroid.otf) format('opentype');
+    font-family: 'android'; /*Font Android*/
+    src: url(idroid.otf) format('opentype');
     font-size: 16px;
+}
+nav {
+    margin-top: -38px;
+    width: 50%;
+    text-align: left;
+    background-color: transparent !important;
 }
 body {
     margin: 0px;
@@ -45,7 +54,8 @@ header > p{
 nav{
      background-color: var(--cor0);
      padding: 10px;
-     box-shadow: 0px 7px 7px #00000054;
+     /* box-shadow: 0px 7px 7px #00000054; */
+     
 }
 nav > a{
     color: white;
@@ -92,7 +102,7 @@ main img.pequena{
     display: block;
     margin: auto;
 }
-main strong {  /* TUDO QUE FOR ESTRONG NO MAIN */
+main strong {  /* ESTRONG NO MAIN */
     background-color: rgba(6, 255, 6, 0.171);
     padding: 1px;
 }
